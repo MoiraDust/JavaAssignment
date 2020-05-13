@@ -1,5 +1,8 @@
 package COMP9103;
 
+import com.sun.xml.internal.ws.wsdl.writer.document.http.Address;
+import org.jetbrains.annotations.NotNull;
+
 import java.util.Scanner;
 
 public class Contact {
@@ -9,6 +12,8 @@ public class Contact {
     private String phone;
     private String Email;
     private String address;
+
+    IsValid ck = new IsValid();
 
     /**Constructors*/
 //    public Contact(String name,String birthday){
@@ -36,7 +41,7 @@ public class Contact {
         address = null;
     }
 
-    public Contact(String information){
+    public Contact( String information){
         for(String temp: information.split(";")){
             Scanner scan = new Scanner(temp);
             if (scan.hasNextLine()){
@@ -63,6 +68,10 @@ public class Contact {
         }
     }
 
+//    public boolean checkValid(){
+//       return (ck.checkName(name) && ck.checkEmail(Email) && ck.checkAddress(address) && ck.checkPhone(phone));
+//    }
+
     public String getName() {
         return name;
     }
@@ -85,13 +94,19 @@ public class Contact {
 
     @Override
     public String toString(){
-        return String.format(
-               "name           " + name.trim() + "\n" +
-               "birthday        " +  birthday+ "\n" +
-               "phone           " + phone.trim() + "\n" +
-               "email           " + Email.trim() + "\n" +
-               "address         " + address.trim() + "\n"
-               );
+        String str = "";
+        str = str + "\nname " + name + "\nbirthday " + birthday;
+        if(address != null){
+            str = str + "\naddress " + address;
+        }
+        if (phone != null){
+            str = str + "\nphone " + phone;
+        }
+        if(Email != null){
+            str = str + "\nemail " + Email;
+        }
+
+        return str;
     }
 
 //    public static void main(String[] args) {
