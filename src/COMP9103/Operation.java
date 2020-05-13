@@ -18,21 +18,22 @@ public class Operation{
     
     public void add(String info){
         Contact c = new Contact(info);
+        System.out.println(c.getName());
         if(ck.checkName(c.getName()) && c.getBirthday().timeCheck()){
             contactList.add(c);
             }
-        for(int i =0; i < contactList.size(); i++){
-            String tempName = contactList.get(i).getName();
-            FormatDate tempBirth = contactList.get(i).getBirthday();
-            for(int j = i+1; j<contactList.size(); j++){
-                String compName = contactList.get(j).getName();
-                FormatDate compBirth = contactList.get(j).getBirthday();
-                if(tempName.equals(compName) && tempBirth.equals(compBirth)){
-                    contactList.set(i,contactList.get(j));
-                    contactList.remove(j);
-                }
-            }
-        }
+//        for(int i =0; i < contactList.size(); i++){
+//            String tempName = contactList.get(i).getName();
+//            FormatDate tempBirth = contactList.get(i).getBirthday();
+//            for(int j = i+1; j<contactList.size(); j++){
+//                String compName = contactList.get(j).getName();
+//                FormatDate compBirth = contactList.get(j).getBirthday();
+//                if(tempName.equals(compName) && tempBirth.equals(compBirth)){
+//                    contactList.set(i,contactList.get(j));
+//                    contactList.remove(j);
+//                }
+//            }
+//        }
         System.out.println(contactList);
     }
 

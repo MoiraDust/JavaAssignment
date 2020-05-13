@@ -7,11 +7,11 @@ import java.util.Scanner;
 
 public class Contact {
     /**fields*/
-    private String name;
-    private FormatDate birthday;
-    private String phone;
-    private String Email;
-    private String address;
+    protected String name;
+    protected FormatDate birthday;
+    protected String phone;
+    protected String Email;
+    protected String address;
 
     IsValid ck = new IsValid();
 

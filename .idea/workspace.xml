@@ -31,6 +31,11 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
   </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="COMP9103" />
+    </key>
+  </component>
   <component name="RunManager" selected="Application.OperateFiles">
     <configuration name="Contact" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="COMP9103.Contact" />
@@ -84,12 +89,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="test.test" />
+    <configuration name="formatContact" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="COMP9103.formatContact" />
       <module name="Comp9103Assignment" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="test.*" />
+          <option name="PATTERN" value="COMP9103.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -129,14 +134,15 @@
       <item itemvalue="Application.IsValid" />
       <item itemvalue="Application.FormatDate" />
       <item itemvalue="Application.Contact" />
+      <item itemvalue="Application.formatContact" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.OperateFiles" />
+        <item itemvalue="Application.formatContact" />
         <item itemvalue="Application.Contact" />
         <item itemvalue="Application.FormatDate" />
         <item itemvalue="Application.IsValid" />
-        <item itemvalue="Application.test" />
       </list>
     </recent_temporary>
   </component>
@@ -169,7 +175,8 @@
       <workItem from="1589177179059" duration="1344000" />
       <workItem from="1589240927908" duration="5742000" />
       <workItem from="1589265505132" duration="2115000" />
-      <workItem from="1589329019508" duration="6357000" />
+      <workItem from="1589329019508" duration="12117000" />
+      <workItem from="1589367442016" duration="2773000" />
     </task>
     <servers />
   </component>
@@ -194,45 +201,45 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="800" y="260" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1588144978792" />
-    <state width="1806" height="239" key="GridCell.Tab.0.bottom" timestamp="1589347052418">
+    <state width="1877" height="240" key="GridCell.Tab.0.bottom" timestamp="1589371294627">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1806" height="239" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1589347052418" />
+    <state width="1877" height="240" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1589371294627" />
     <state width="1877" height="102" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1588139358553" />
-    <state width="1806" height="239" key="GridCell.Tab.0.center" timestamp="1589347052418">
+    <state width="1877" height="240" key="GridCell.Tab.0.center" timestamp="1589371294627">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1806" height="239" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1589347052418" />
+    <state width="1877" height="240" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1589371294627" />
     <state width="1877" height="102" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1588139358553" />
-    <state width="1806" height="239" key="GridCell.Tab.0.left" timestamp="1589347052418">
+    <state width="1877" height="240" key="GridCell.Tab.0.left" timestamp="1589371294627">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1806" height="239" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1589347052418" />
+    <state width="1877" height="240" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1589371294627" />
     <state width="1877" height="102" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1588139358553" />
-    <state width="1806" height="239" key="GridCell.Tab.0.right" timestamp="1589347052418">
+    <state width="1877" height="240" key="GridCell.Tab.0.right" timestamp="1589371294627">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1806" height="239" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1589347052418" />
+    <state width="1877" height="240" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1589371294627" />
     <state width="1877" height="102" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1588139358553" />
-    <state width="1806" height="251" key="GridCell.Tab.1.bottom" timestamp="1589347027705">
+    <state width="1877" height="240" key="GridCell.Tab.1.bottom" timestamp="1589371294627">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1806" height="251" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1589347027705" />
+    <state width="1877" height="240" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1589371294627" />
     <state width="1171" height="279" key="GridCell.Tab.1.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1588057083326" />
-    <state width="1806" height="251" key="GridCell.Tab.1.center" timestamp="1589347027705">
+    <state width="1877" height="240" key="GridCell.Tab.1.center" timestamp="1589371294627">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1806" height="251" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1589347027705" />
+    <state width="1877" height="240" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1589371294627" />
     <state width="1171" height="279" key="GridCell.Tab.1.center/0.0.1920.1080@0.0.1920.1080" timestamp="1588057083326" />
-    <state width="1806" height="251" key="GridCell.Tab.1.left" timestamp="1589347027705">
+    <state width="1877" height="240" key="GridCell.Tab.1.left" timestamp="1589371294627">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1806" height="251" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1589347027705" />
+    <state width="1877" height="240" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1589371294627" />
     <state width="1171" height="279" key="GridCell.Tab.1.left/0.0.1920.1080@0.0.1920.1080" timestamp="1588057083326" />
-    <state width="1806" height="251" key="GridCell.Tab.1.right" timestamp="1589347027705">
+    <state width="1877" height="240" key="GridCell.Tab.1.right" timestamp="1589371294627">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1806" height="251" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1589347027705" />
+    <state width="1877" height="240" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1589371294627" />
     <state width="1171" height="279" key="GridCell.Tab.1.right/0.0.1920.1080@0.0.1920.1080" timestamp="1588057083326" />
     <state x="440" y="94" key="SettingsEditor" timestamp="1588677205020">
       <screen x="0" y="0" width="1920" height="1040" />
@@ -251,16 +258,5 @@
     </state>
     <state x="828" y="231" width="672" height="653" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1589073141632" />
     <state x="828" y="240" width="672" height="678" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1588057021606" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/COMP9103/Contact.java</url>
-          <line>53</line>
-          <option name="timeStamp" value="12" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

@@ -26,10 +26,11 @@ public class OperateFiles {
         try{
             Scanner scanFile = new Scanner(sample);//一会儿将这里的sample改成inputFile
             String information = "";
-            while(scanFile.hasNext()){
-                information = scanFile.nextLine();
-                Contact c = new Contact(information);
-                System.out.println(c);
+            while(scanFile.hasNextLine()){
+                       information = scanFile.nextLine();
+                       System.out.println(information);
+                       formatContact c = new formatContact(information);/**构造函数有问题，一会儿吧文件所有内容复制进去看看*/
+                System.out.println(c.getName());
             }
         } catch (Exception e) {
             System.out.println(e.getMessage());
@@ -98,12 +99,15 @@ public class OperateFiles {
         String path4 = "D:\\STUDY\\U Sleep You Die\\COMP9103 without hw\\assignment\\samples_release\\instructions_4.txt";
         String path5 = "D:\\STUDY\\U Sleep You Die\\COMP9103 without hw\\assignment\\samples_release\\instructions_5.txt";
         String path6 = "D:\\STUDY\\U Sleep You Die\\COMP9103 without hw\\assignment\\test.txt";
-        File f = new File(path3);
-        OperateFiles file = new OperateFiles();
-//        file.getInstruction(f);
 
         String rPath = "D:\\STUDY\\U Sleep You Die\\COMP9103 without hw\\assignment\\samples_release\\contacts_1.txt";
         File rf = new File(rPath);
+
+        File f = new File(path3);
+        OperateFiles file = new OperateFiles();
+//        file.getInstruction(rf);
+
+
         file.readOrginalContact(rf);
     }
 
