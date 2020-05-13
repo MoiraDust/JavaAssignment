@@ -3,34 +3,44 @@ package test;
 public class test {public static void main(String[] args) throws Exception {
     String regex = "^(?![0-9]+$)(?![a-zA-Z]+$)[0-9A-Za-z]{8,16}$";
 
-    String value = "aaa";  // 长度不够
+    // 长度不够
+    String value = "aaa";
     System.out.println(value.matches(regex));
 
-    value = "1111aaaa1111aaaaa";  // 太长
+    // 太长
+    value = "1111aaaa1111aaaaa";
     System.out.println(value.matches(regex));
 
-    value = "111111111"; // 纯数字
+    // 纯数字
+    value = "111111111";
     System.out.println(value.matches(regex));
 
-    value = "aaaaaaaaa"; // 纯字母
+    // 纯字母
+    value = "aaaaaaaaa";
     System.out.println(value.matches(regex));
 
-    value = "####@@@@#"; // 特殊字符
+    // 特殊字符
+    value = "####@@@@#";
     System.out.println(value.matches(regex));
 
-    value = "1111aaaa";  // 数字字母组合
+    // 数字字母组合
+    value = "1111aaaa";
     System.out.println(value.matches(regex));
 
-    value = "aaaa1111"; // 数字字母组合
+    // 数字字母组合
+    value = "aaaa1111";
     System.out.println(value.matches(regex));
 
-    value = "aa1111aa";	// 数字字母组合
+    // 数字字母组合
+    value = "aa1111aa";
     System.out.println(value.matches(regex));
 
-    value = "11aaaa11";	// 数字字母组合
+    // 数字字母组合
+    value = "11aaaa11";
     System.out.println(value.matches(regex));
 
-    value = "aa11aa11"; // 数字字母组合
+    // 数字字母组合
+    value = "aa11aa11";
     System.out.println(value.matches(regex));
 }
 }
