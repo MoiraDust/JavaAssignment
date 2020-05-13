@@ -22,7 +22,7 @@ public class Operation{
         if(ck.checkName(c.getName()) && c.getBirthday().timeCheck()){
             contactList.add(c);
             }
-        
+
         //      for(int i =0; i < contactList.size(); i++){
         //          String tempName = contactList.get(i).getName();
         //          FormatDate tempBirth = contactList.get(i).getBirthday();

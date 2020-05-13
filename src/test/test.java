@@ -3,43 +3,43 @@ package test;
 public class test {public static void main(String[] args) throws Exception {
     String regex = "^(?![0-9]+$)(?![a-zA-Z]+$)[0-9A-Za-z]{8,16}$";
 
-    // ³¤¶È²»¹»
+    // é•¿åº¦ä¸å¤Ÿ
     String value = "aaa";
     System.out.println(value.matches(regex));
 
-    // Ì«³¤
+    // å¤ªé•¿
     value = "1111aaaa1111aaaaa";
     System.out.println(value.matches(regex));
 
-    // ´¿Êı×Ö
+    // çº¯æ•°å­—
     value = "111111111";
     System.out.println(value.matches(regex));
 
-    // ´¿×ÖÄ¸
+    // çº¯å­—æ¯
     value = "aaaaaaaaa";
     System.out.println(value.matches(regex));
 
-    // ÌØÊâ×Ö·û
+    // ç‰¹æ®Šå­—ç¬¦
     value = "####@@@@#";
     System.out.println(value.matches(regex));
 
-    // Êı×Ö×ÖÄ¸×éºÏ
+    // æ•°å­—å­—æ¯ç»„åˆ
     value = "1111aaaa";
     System.out.println(value.matches(regex));
 
-    // Êı×Ö×ÖÄ¸×éºÏ
+    // æ•°å­—å­—æ¯ç»„åˆ
     value = "aaaa1111";
     System.out.println(value.matches(regex));
 
-    // Êı×Ö×ÖÄ¸×éºÏ
+    // æ•°å­—å­—æ¯ç»„åˆ
     value = "aa1111aa";
     System.out.println(value.matches(regex));
 
-    // Êı×Ö×ÖÄ¸×éºÏ
+    // æ•°å­—å­—æ¯ç»„åˆ
     value = "11aaaa11";
     System.out.println(value.matches(regex));
 
-    // Êı×Ö×ÖÄ¸×éºÏ
+    // æ•°å­—å­—æ¯ç»„åˆ
     value = "aa11aa11";
     System.out.println(value.matches(regex));
 }

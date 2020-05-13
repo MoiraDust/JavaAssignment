@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9b8a0c53-d016-43be-8969-07c90f6acb15" name="Default Changelist" comment="" />
+    <list default="true" id="9b8a0c53-d016-43be-8969-07c90f6acb15" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/COMP9103/OperateFiles.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/COMP9103/OperateFiles.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/COMP9103/Operation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/COMP9103/Operation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/test.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,6 +20,9 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1b7OWeUwuvO4KviidEHVGI6snRh" />
   <component name="ProjectViewState">
@@ -30,6 +40,7 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="File.Encoding" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
@@ -193,6 +204,10 @@
     </state>
     <state x="625" y="244" width="645" height="568" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1588993536452" />
     <state x="625" y="253" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1080@0.0.1920.1080" timestamp="1587980188264" />
+    <state x="782" y="467" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1589412479151">
+      <screen x="0" y="23" width="1792" height="1097" />
+    </state>
+    <state x="782" y="467" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.23.1792.1097@0.23.1792.1097" timestamp="1589412479151" />
     <state x="366" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1588574342673">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -241,10 +256,15 @@
     </state>
     <state width="1877" height="240" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1589371294627" />
     <state width="1171" height="279" key="GridCell.Tab.1.right/0.0.1920.1080@0.0.1920.1080" timestamp="1588057083326" />
-    <state x="440" y="94" key="SettingsEditor" timestamp="1588677205020">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="411" y="122" key="SettingsEditor" timestamp="1589412509903">
+      <screen x="0" y="23" width="1792" height="1097" />
     </state>
     <state x="440" y="94" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1588677205020" />
+    <state x="411" y="122" key="SettingsEditor/0.23.1792.1097@0.23.1792.1097" timestamp="1589412509903" />
+    <state x="610" y="404" key="com.intellij.ide.util.TipDialog" timestamp="1589412461505">
+      <screen x="0" y="23" width="1792" height="1097" />
+    </state>
+    <state x="610" y="404" key="com.intellij.ide.util.TipDialog/0.23.1792.1097@0.23.1792.1097" timestamp="1589412461505" />
     <state x="723" y="383" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1589346195176">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

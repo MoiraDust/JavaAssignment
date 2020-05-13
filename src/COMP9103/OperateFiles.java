@@ -24,12 +24,14 @@ public class OperateFiles {
 
     public void readOrginalContact(File sample){
         try{
-            Scanner scanFile = new Scanner(sample);//一会儿将这里的sample改成inputFile
+            //一会儿将这里的sample改成inputFile
+            Scanner scanFile = new Scanner(sample);
             String information = "";
             while(scanFile.hasNextLine()){
                        information = scanFile.nextLine();
                        System.out.println(information);
-                       formatContact c = new formatContact(information);/**构造函数有问题，一会儿吧文件所有内容复制进去看看*/
+                       // 构造函数有问题，一会儿吧文件所有内容复制进去看看
+                       formatContact c = new formatContact(information);
                 System.out.println(c.getName());
             }
         } catch (Exception e) {
