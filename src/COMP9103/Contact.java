@@ -1,6 +1,5 @@
 package COMP9103;
 
-
 import java.util.Scanner;
 
 public class Contact {
@@ -10,8 +9,6 @@ public class Contact {
     protected String phone;
     protected String Email;
     protected String address;
-
-    IsValid ck = new IsValid();
 
     /**Constructors*/
 //    public Contact(String name,String birthday){
@@ -39,36 +36,30 @@ public class Contact {
         address = null;
     }
 
-    public Contact( String information){
-        for(String temp: information.split(";")){
-            Scanner scan = new Scanner(temp);
-            if (scan.hasNextLine()){
+    public Contact(String information){
+            Scanner scan = new Scanner(information);
+            while (scan.hasNext()){
                 String prefix = scan.next();
                 if(prefix.equalsIgnoreCase("name")){
-                    name = scan.nextLine().substring(1);
-                }
+                    name = scan.nextLine();
+                }else
                 if(prefix.equalsIgnoreCase("birthday")){
                     birthday = new FormatDate(scan.nextLine().substring(1));
-                }
+                }else
                 if(prefix.equalsIgnoreCase("phone")){
-                    phone = scan.nextLine().substring(1);
-                }
+                    phone = scan.nextLine();
+                }else
                 if(prefix.equalsIgnoreCase("email")){
-                    Email = scan.nextLine().substring(1);
-                }
+                    Email = scan.nextLine();
+                }else
                 if(prefix.equalsIgnoreCase("address")){
-//                    address = new Scanner(scan.nextLine().substring(1)).nextLine();
-//                    address = scan.nextLine().substring(1);
-                    address = scan.nextLine().substring(1);
+                    address = scan.nextLine();
 
                 }
             }
         }
-    }
 
-//    public boolean checkValid(){
-//       return (ck.checkName(name) && ck.checkEmail(Email) && ck.checkAddress(address) && ck.checkPhone(phone));
-//    }
+
 
     public String getName() {
         return name;
@@ -93,26 +84,18 @@ public class Contact {
     @Override
     public String toString(){
         String str = "";
-        str = str + "\nname " + name + "\nbirthday " + birthday;
+        str = str + "\nname: " + name + "\nbirthday: " + birthday;
         if(address != null){
-            str = str + "\naddress " + address;
+            str = str + "\naddress: " + address;
         }
         if (phone != null){
-            str = str + "\nphone " + phone;
+            str = str + "\nphone: " + phone;
         }
         if(Email != null){
-            str = str + "\nemail " + Email;
+            str = str + "\nemail: " + Email;
         }
 
         return str;
     }
 
-//    public static void main(String[] args) {
-//        Contact c = new Contact("name Jam234es Smith; birthday 24-03-1989; address 60 Morris St, Summer Hill, NSW 2130");
-//        System.out.println(c.getName());
-//        System.out.println(c.getBirthday());
-//        System.out.println(c.getEmail());
-//        System.out.println(c.getPhone());
-//        System.out.println(c.getAddress());
-//    }
 }
