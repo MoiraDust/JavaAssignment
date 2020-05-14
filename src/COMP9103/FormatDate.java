@@ -9,41 +9,42 @@ public class FormatDate {
     private String dateString;
     private Date date;
 
-    public FormatDate(String dateString){
+    public FormatDate(String dateString) {
         this.dateString = dateString;
         String[] temp;
-        if(dateString.matches("\\d+\\D\\d+\\D\\d+")){
+        if (dateString.matches("\\d+\\D\\d+\\D\\d+")) {
             temp = dateString.split("\\D");
-            if(temp.length == 3){
-                for(int i =0; i < 2; i++ ){
+            if (temp.length == 3) {
+                for (int i = 0; i < 2; i++) {
                     temp[i] = "0" + temp[i];
                 }
                 dateString = temp[0] + "-" + temp[1] + "-" + temp[2];
             }
         }
-        try{
+        try {
             dateFormat.setLenient(false);
             date = dateFormat.parse(dateString);
-        }catch (ParseException e){
+        } catch (ParseException e) {
             date = null;
         }
 
     }
 
-    public boolean timeCheck(){
-        if (date == null){
+    public boolean timeCheck() {
+        if (date == null) {
             return false;
-        }else{
+        } else {
             return true;
         }
     }
 
     @Override
-    public String toString(){
+    public String toString() {
         return dateFormat.format(date);
     }
 
-    public Date getDate(){
+
+    public Date getDate() {
         return date;
     }
 
