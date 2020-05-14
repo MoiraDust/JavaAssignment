@@ -12,7 +12,7 @@ public class OperateFiles {
     private File outputFile;
     private File readContact;
 
-    private Operation o = new Operation();
+    IsValid ck = new IsValid();
 
     public ArrayList<Contact> contactList = new ArrayList<Contact>();
 
@@ -22,15 +22,24 @@ public class OperateFiles {
 //        outputResult = new File(s[2]);
 //    }
 
-    public void readOrginalContact(File sample){
+    public void readContact(File sample){
         try{
             Scanner scanFile = new Scanner(sample);//一会儿将这里的sample改成inputFile
-            String information = "";
-            while(scanFile.hasNextLine()){
-                       information = scanFile.nextLine();
-                       System.out.println(information);
-                       formatContact c = new formatContact(information);/**构造函数有问题，一会儿吧文件所有内容复制进去看看*/
-                System.out.println(c.getName());
+            while(scanFile.hasNextLine()) {
+                String record = "";
+                while (scanFile.hasNextLine()) {
+                    String info = scanFile.nextLine();
+                    if (info.equals("")) {
+                        record += '\n';
+                        break;
+                    }
+                    record += info + '\n';
+                }
+                Contact c = new Contact(record);
+                contactList.add(c);
+            }
+            for(Contact c : contactList){
+                System.out.println(c);
             }
         } catch (Exception e) {
             System.out.println(e.getMessage());
@@ -38,14 +47,11 @@ public class OperateFiles {
     }
 
 
-    public void getInstruction(File sample){
+    public void readInstruction(File sample){
         try{
             Scanner scanFile = new Scanner(sample);   //一会儿将这里的sample改成inputFile
             String information = "null";
             while(scanFile.hasNextLine()){
-//                String temp = scanFile.nextLine();
-//                System.out.println(temp);
-//                Scanner scan = new Scanner(temp);
                if(scanFile.hasNext()){
                    instruct = scanFile.next();
                    if(scanFile.hasNextLine()){
@@ -56,25 +62,6 @@ public class OperateFiles {
 //                System.out.println(information);            //输出后面内容
                 jumpToOperation(instruct,information);
             }
-//        try {
-//            Scanner scan = new Scanner(sample);
-//            while(scan.hasNextLine()){
-//                String instruction = scan.nextLine();
-//                Scanner sc = new Scanner(instruction);
-//                String keyword,param;
-//                if(sc.hasNext()){
-//                    keyword = sc.next();
-//                    if(sc.hasNextLine()){
-//                        param = sc.nextLine();
-//                        if(keyword.equalsIgnoreCase("add")){
-//                            o.add(param);
-//                        }else if(keyword.equalsIgnoreCase("delete")){
-//                            o.delete(param);
-//                        }else{continue;}
-//                        sc.close();
-//                    }
-//                }
-//            }
             scanFile.close();
         } catch (Exception e) {
             System.out.println(e.getMessage());
@@ -84,12 +71,36 @@ public class OperateFiles {
     public void jumpToOperation(String keyword, String param){
         switch (keyword){
             case "add":
-                o.add(param);
+                add(param);
                 break;
             case "delete":
-                o.delete(param);
+                delete(param);
                 break;
         }
+    }
+
+    public void add(String info){
+        Instructions instructFile = new Instructions(info);
+        if(ck.checkName(instructFile.getName()) && instructFile.getBirthday().timeCheck()){
+            contactList.add(instructFile);
+        }
+//        for(int i =0; i < contactList.size(); i++){
+//            String tempName = contactList.get(i).getName();
+//            FormatDate tempBirth = contactList.get(i).getBirthday();
+//            for(int j = i+1; j<contactList.size(); j++){
+//                String compName = contactList.get(j).getName();
+//                FormatDate compBirth = contactList.get(j).getBirthday();
+//                if(tempName.equals(compName) && tempBirth.equals(compBirth)){
+//                    contactList.set(i,contactList.get(j));
+//                    contactList.remove(j);
+//                }
+//            }
+//        }
+        System.out.println(contactList);
+    }
+
+    public void delete(String info){
+
     }
 
     public static void main(String[] args) {
@@ -105,10 +116,8 @@ public class OperateFiles {
 
         File f = new File(path3);
         OperateFiles file = new OperateFiles();
-//        file.getInstruction(rf);
-
-
-        file.readOrginalContact(rf);
+        file.readInstruction(f);
+//        file.readContact(rf);
     }
 
 }
